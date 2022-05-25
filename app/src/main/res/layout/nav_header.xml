@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="@dimen/padding_general"
+    android:background="@android:color/holo_purple">
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cuatro" />
+
+    <TextView
+        android:id="@+id/txtNombreCabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/cabecera_del_usuario"
+        android:textSize="@dimen/titulo_texto" />
+
+</LinearLayout>

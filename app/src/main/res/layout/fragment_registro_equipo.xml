@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragmentos.FragRegistroEquipo"
+    android:layout_margin="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            tools:context=".view.fragmentos.FragRegistroEquipo">
+
+            <TextView
+                android:id="@+id/txtTituloRegistroEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Registro Equipos"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFechaIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCodigoIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Código Ingreso"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtNombreIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Cliente"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtMarcaIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese Marca"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtModeloIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese Modelo de Equipo"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Switch
+                android:id="@+id/swBolso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:text="Bolso"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEquipoEnCaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=" Equipo en Caja "
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiEquipoEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoEquipoEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtCargadorEnCaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cargador en Caja"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiCargador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoCargador"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtManualEnCaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Manual en Caja"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiManualEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoManualEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtGarantiaEnCaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Garantia en Caja"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiGarantiaEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoGarantiaEnCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtEnciendeCargaSo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Equipo Enciende y Carga SO"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiEnciendeCargaSo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoEnciendeCargaSo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtMonitorProblemas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Monitor Problemas"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiMonitorProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoMonitorProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtAudioProblemas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Audio Problemas"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiAudioProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoAudioProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtTouchPadProblemas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TouchPad Problemas"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdSiTouchPadProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rdNoTouchpadProblemas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/txtObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Ingrese Observaciones de Entrega"
+                android:inputType="textMultiLine" />
+
+
+            <Button
+                android:id="@+id/btnFoto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Foto 1"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconGravity="textStart" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/cardview_dark_background" />
+
+            <Button
+                android:id="@+id/btnFoto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Foto 2"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconGravity="textStart" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/cardview_dark_background" />
+
+            <Button
+                android:id="@+id/btnRegistrarEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:enabled="true"
+                android:text="Registrar Equipo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
